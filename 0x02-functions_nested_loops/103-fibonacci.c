@@ -1,35 +1,27 @@
 #include <stdio.h>
-#include "main.c"
-
 /**
- * main - prints fibonnaci numbers
- *
- * Description: prints from 1 to 4,000,000
- * Return: Always(0) Success
+ * main - print the first 50 fibonacci numbers.
+ * Return: Nothing.
  */
-
 int main(void)
 {
-	int num1, num2, i, n;
-	int next_num;
+unsigned long count, i, j, k;
 
-	n = 4,000,000;
-
-	for (i = 1; i <= n; i++)
-	{
-		if (i == 4,000,000)
-		{
-			printf("%d, ", num2);
-		}
-		else
-		{
-			printf("%d, ", num2);
-			next_num = num1 + num2;
-			num1 = num2;
-			num2 = next_num;
-		}
-	}
-	printf("\n");
-
-	return (0);
+i = 0;
+j = 1;
+for (count = 0; count < 50; count++)
+{
+k = i + j;
+i = j;
+j = k;
+printf("%lu", k);
+if (count == 49)
+putchar('\n');
+else
+{
+printf(", ");
 }
+}
+return (0);
+}
+
