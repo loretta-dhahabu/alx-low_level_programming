@@ -1,4 +1,4 @@
-ifndef _dog_h_
+#ifndef _dog_h_
 #define _dog_h_
 
 /**
